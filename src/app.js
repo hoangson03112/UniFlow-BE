@@ -20,6 +20,7 @@ export function createApp() {
         "http://localhost:5174",
         "http://localhost:5173",
         "https://web-track-naver-vietnam-ai-hackathon-hoangson03112-3iunl67wn.vercel.app",
+        "https://web-track-naver-vietnam-ai-hackatho-ochre.vercel.app",
       ],
       credentials: true,
     })
