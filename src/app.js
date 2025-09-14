@@ -16,7 +16,11 @@ export function createApp() {
   app.use(helmet());
   app.use(
     cors({
-      origin: ["http://localhost:5174", "http://localhost:5173"],
+      origin: [
+        "http://localhost:5174",
+        "http://localhost:5173",
+        "https://web-track-naver-vietnam-ai-hackathon-hoangson03112-3iunl67wn.vercel.app",
+      ],
       credentials: true,
     })
   );
@@ -30,7 +34,6 @@ export function createApp() {
 
   app.use("/api/auth", auth);
   app.use("/api/tasks", tasks);
-
   app.use("/api/learning-goals", learningGoals);
 
   app.use((req, res) => res.status(404).json({ error: "Not found" }));
